@@ -1,0 +1,239 @@
+/* ===========================
+GENERAL STYLING 
+=========================== */
+
+body {
+ font-family: Arial, sans-serif; /* Sets a clean, readable font */
+ background-color: silver; /* Background color for the entire page */
+ color: black; /* Default text color */
+ margin: 0;
+ padding: 0;
+}
+
+/* Ensures content is centered and well-spaced */
+.container {
+ width: 80%;
+ margin: auto;
+ padding: 20px;
+}
+
+/* ===========================
+NAVIGATION BAR
+=========================== */
+
+nav {
+ background-color: darkgreen; /* Navbar background color */
+ padding: 10px 0; /* Adds some padding for better spacing */
+ text-align: center;
+}
+
+/* Styles the navbar list */
+nav ul {
+ list-style: none;
+ padding: 0;
+ margin: 0;
+}
+
+/* Styles each navbar item */
+nav ul li {
+ display: inline;
+ margin: 0 15px;
+}
+
+/* Styles navbar links */
+nav ul li a {
+ color: limegreen;
+ text-decoration: none;
+ font-weight: bold;
+ padding: 8px 15px;
+ transition: 0.3s ease-in-out;
+}
+
+/* Navbar link hover effect */
+nav ul li a:hover {
+ background-color: limegreen;
+ color: black;
+ border-radius: 5px;
+}
+ /* Hamburger menu icon */
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+  }
+
+/* Hide the checkbox input */
+#menu-toggle {
+    display: none;
+  }  
+
+/* ===========================
+HEADER & BANNER STYLING
+=========================== */
+
+header {
+ text-align: center;
+ background-color: black;
+ color: limegreen;
+ padding: 50px 20px;
+}
+
+/* Styles the banner image */
+.banner {
+ width: 100%;
+ height: auto;
+ border-radius: 10px; /* Adds a rounded border */
+}
+
+/* ===========================
+SECTION STYLING
+=========================== */
+
+h1, h2 {
+ text-align: center;
+ color: darkgreen;
+}
+
+/* Adds spacing to each section */
+section {
+ padding: 20px;
+ margin: 20px auto;
+ width: 80%;
+ background-color: white;
+ box-shadow: 2px 2px 10px gray; /* Adds a subtle shadow */
+ border-radius: 10px;
+}
+
+/* ===========================
+TABLE STYLING (MENU PAGE)
+=========================== */
+
+/* Center the table */
+table {
+ width: 90%;
+ margin: 20px auto;
+ border-collapse: collapse;
+ background-color: grey;
+ box-shadow: 2px 2px 10px darkgreen;
+}
+
+/* Styles table headers */
+th {
+ background-color: limegreen;
+ color: black;
+ padding: 10px;
+}
+
+/* Styles table cells */
+td {
+ padding: 10px;
+ border: 1px solid black;
+ text-align: center;
+}
+
+/* Alternate row colors for better readability */
+tr:nth-child(even) {
+ background-color: silver;
+}
+
+/* ===========================
+FORM STYLING (CONTACT PAGE)
+=========================== */
+
+form {
+ width: 50%;
+ margin: 20px auto;
+ padding: 20px;
+ background-color: white;
+ box-shadow: 2px 2px 10px gray;
+ border-radius: 10px;
+}
+
+/* Styles input fields */
+input, textarea {
+ width: 97%;
+ padding: 10px;
+ margin: 10px 0;
+ border: 2px solid darkgreen;
+ border-radius: 5px;
+}
+
+/* Focus effect for input fields */
+input:focus, textarea:focus {
+ border: 2px solid limegreen;
+ outline: none;
+}
+
+/* Styles the submit button */
+button {
+ background-color: darkgreen;
+ color: white;
+ padding: 10px 15px;
+ border: none;
+ border-radius: 5px;
+ cursor: pointer;
+ transition: 0.3s ease-in-out;
+}
+
+/* Hover effect for button */
+button:hover {
+ background-color: limegreen;
+ color: black;
+}
+
+/* ===========================
+FOOTER STYLING
+=========================== */
+
+footer {
+ text-align: center;
+ background-color: black;
+ color: silver;
+ padding: 15px;
+ margin-top: 20px;
+}
+
+/* ===========================
+RESPONSIVENESS (MOBILE STYLES)
+=========================== */
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    /* Hide the navigation links by default */
+    nav ul {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      background-color: #333;
+    }
+  
+    /* Display the hamburger icon */
+    .menu-icon {
+      display: block;
+    }
+
+ /* Make form take full width */
+    form {
+         width: 90%;
+ }
+
+ /* Reduce padding on sections */
+    section {
+         width: 90%;
+ }
+
+ /* Reduce table width */
+    table {
+         width: 100%;
+ }
+
+/* When the checkbox is checked, show the menu */
+ #menu-toggle:checked + label + ul {
+   display: flex;
+ }
+ nav ul li {
+   margin: 10px 0;
+ }
+} 
+

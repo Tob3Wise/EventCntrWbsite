@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events - The Grand Event Center</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+    <div id="navbar-container"></div>
+<script>
+    fetch("navbar.html")
+        .then(response => response.text())
+        .then(data => document.getElementById("navbar-container").innerHTML = data)
+        .catch(error => console.error("Error loading navbar:", error));
+</script>
+
+<body>
+    <h1>Upcoming Events</h1>
+
+    <section class="events">
+        <!-- Each event uses a semantic article tag -->
+        <article>
+            <h2>Rock Night Live</h2>
+            <p><strong>Date:</strong> April 15, 2025</p>
+            <p>A night of electrifying performances from top rock bands.</p>
+        </article>
+
+        <article>
+            <h2>Jazz & Wine Evening</h2>
+            <p><strong>Date:</strong> May 10, 2025</p>
+            <p>Enjoy soothing jazz music while sipping on the finest wines.</p>
+        </article>
+
+        <article>
+            <h2>Electronic Dance Festival</h2>
+            <p><strong>Date:</strong> June 5, 2025</p>
+            <p>Experience a high-energy festival with top DJs from around the world.</p>
+        </article>
+    </section>
+</body>
+</html>
+

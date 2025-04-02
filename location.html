@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location - The Grand Event Center</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="navbar-container"></div>
+<script>
+    fetch("navbar.html")
+        .then(response => response.text())
+        .then(data => document.getElementById("navbar-container").innerHTML = data)
+        .catch(error => console.error("Error loading navbar:", error));
+</script>
+
+    <h1>Our Location</h1>
+    <p><strong>Address:</strong> 123 Main Street, Music City, USA</p>
+    <p><strong>Hours:</strong> 10 AM - 11 PM</p>
+
+    <!-- Embedded Google Map -->
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!..."></iframe>
+</body>
+</html>
